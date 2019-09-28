@@ -6,13 +6,136 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#8cdeff">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:id="@+id/user"
+                android:src="@drawable/user"/>
+            <TextureView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFF"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user"
+                android:layout_centerHorizontal="true"
+                android:text="Profile"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#ffd78c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/job"
+                android:src="@drawable/pin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/job"
+                android:layout_centerHorizontal="true"
+                android:text="Search Job"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#ff8c8c">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/notif"
+                android:src="@drawable/bell"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFF"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notif"
+                android:layout_centerHorizontal="true"
+                android:text="Notification"/>
+        </RelativeLayout>
+    </FrameLayout>
+    
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#fff58c"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/rate"
+                android:src="@drawable/star"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rate"
+                android:layout_centerHorizontal="true"
+                android:text="Rate Card"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#ff8cfb">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/rev"
+                android:src="@drawable/like"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rev"
+                android:layout_centerHorizontal="true"
+                android:textColor="FFFFF"
+                android:text="Review"/>
+        </RelativeLayout>
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
